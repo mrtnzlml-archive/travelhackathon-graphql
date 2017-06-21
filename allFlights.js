@@ -2,7 +2,17 @@ const fetch = require('node-fetch');
 const config = require('./_config');
 
 // see: https://travelhackathon-graphiql.now.sh/
-const query = `query AllFlights($search: FlightsSearchInput!) {
+const query = `
+fragment RouteStop on RouteStop {
+  airport {
+    city {
+      name
+    }
+    code
+  }
+}
+
+query AllFlights($search: FlightsSearchInput!) {
   allFlights(search: $search, first: 1) {
     pageInfo {
       hasNextPage
@@ -22,20 +32,10 @@ const query = `query AllFlights($search: FlightsSearchInput!) {
           recheckRequired
           duration
           departure {
-            airport {
-              city {
-                name
-              }
-              code
-            }
+            ...RouteStop
           }
           arrival {
-            airport {
-              city {
-                name
-              }
-              code
-            }
+            ...RouteStop
           }
           airline {
             name
@@ -47,15 +47,25 @@ const query = `query AllFlights($search: FlightsSearchInput!) {
       }
     }
   }
-}`;
+}
+`;
 
 const variables = {
   search: {
-    from: 'PRG',
-    to: 'Brno',
+    from: {
+      radius: { // Prague
+        lat: 50.08,
+        lng: 14.44,
+        radius: 100
+      }
+    },
+    to: [
+      { location: 'Brno' },
+      { location: 'London' }
+    ],
     dateFrom: '2017-12-24',
-    dateTo: '2017-12-30'
-  }
+    dateTo: '2017-12-30',
+  },
 };
 
 fetch(config.API, {

@@ -13,9 +13,11 @@ mutation ($email: String!, $password: String!) {
       fullName
     }
   }
-}`;
+}
+`;
 
-const query = `{
+const query = `
+{
   allBookings(first: 2) {
     pageInfo {
       hasNextPage
@@ -56,7 +58,8 @@ const query = `{
       }
     }
   }
-}`;
+}
+`;
 
 fetch(config.API, {
   method: 'POST',

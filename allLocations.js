@@ -2,7 +2,8 @@ const fetch = require('node-fetch');
 const config = require('./_config');
 
 // see: https://travelhackathon-graphiql.now.sh/
-const query = `{
+const query = `
+{
   allLocations(search: "PRG", first:2) {
     pageInfo {
       hasNextPage
@@ -25,7 +26,8 @@ const query = `{
       }
     }
   }
-}`;
+}
+`;
 
 fetch(config.API, {
   method: 'POST',

@@ -74,14 +74,14 @@ node allFlights.js
           "cursor": "YXJyYXljb25uZWN0aW9uOjA=",
           "node": {
             "price": {
-              "amount": 96,
+              "amount": 50,
               "currency": "EUR"
             },
             "legs": [
               {
-                "flightNumber": 5236,
+                "flightNumber": 3064,
                 "recheckRequired": false,
-                "duration": 90,
+                "duration": 120,
                 "departure": {
                   "airport": {
                     "city": {
@@ -93,42 +93,15 @@ node allFlights.js
                 "arrival": {
                   "airport": {
                     "city": {
-                      "name": "Eindhoven"
+                      "name": "London"
                     },
-                    "code": "EIN"
+                    "code": "STN"
                   }
                 },
                 "airline": {
-                  "name": "Transavia",
-                  "code": "HV",
-                  "logoUrl": "https://images.kiwi.com/airlines/64/HV.png",
-                  "isLowCost": true
-                }
-              },
-              {
-                "flightNumber": 2826,
-                "recheckRequired": true,
-                "duration": 95,
-                "departure": {
-                  "airport": {
-                    "city": {
-                      "name": "Eindhoven"
-                    },
-                    "code": "EIN"
-                  }
-                },
-                "arrival": {
-                  "airport": {
-                    "city": {
-                      "name": "Brno"
-                    },
-                    "code": "BRQ"
-                  }
-                },
-                "airline": {
-                  "name": "Wizzair",
-                  "code": "W6",
-                  "logoUrl": "https://images.kiwi.com/airlines/64/W6.png",
+                  "name": "easyJet",
+                  "code": "U2",
+                  "logoUrl": "https://images.kiwi.com/airlines/64/U2.png",
                   "isLowCost": true
                 }
               }
