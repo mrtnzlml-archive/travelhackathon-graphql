@@ -6,10 +6,8 @@ const query = `
 {
   allLocations(search: "PRG", first:2) {
     pageInfo {
-      hasNextPage
-      hasPreviousPage
-      startCursor
-      endCursor
+      hasNextPage, hasPreviousPage
+      startCursor, endCursor
     }
     edges {
       cursor
@@ -19,8 +17,7 @@ const query = `
         slug
         timezone
         location {
-          latitude
-          longitude
+          lat, lng
         }
         type
       }

@@ -27,8 +27,8 @@ node allLocations.js
             "slug": "vaclav-havel-airport-prague-prague-czech-republic",
             "timezone": "Europe/Prague",
             "location": {
-              "latitude": 50.1008333,
-              "longitude": 14.26
+              "lat": 50.1008333,
+              "lng": 14.26
             },
             "type": "airport"
           }
@@ -41,8 +41,8 @@ node allLocations.js
             "slug": "prague-czech-republic",
             "timezone": "Europe/Prague",
             "location": {
-              "latitude": 50.0755381,
-              "longitude": 14.4378005
+              "lat": 50.0755381,
+              "lng": 14.4378005
             },
             "type": "city"
           }
