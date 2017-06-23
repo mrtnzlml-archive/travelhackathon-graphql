@@ -87,7 +87,7 @@ node allFlights.js
                     "city": {
                       "name": "Prague"
                     },
-                    "code": "PRG"
+                    "locationId": "PRG"
                   }
                 },
                 "arrival": {
@@ -95,7 +95,7 @@ node allFlights.js
                     "city": {
                       "name": "London"
                     },
-                    "code": "STN"
+                    "locationId": "STN"
                   }
                 },
                 "airline": {
@@ -142,9 +142,9 @@ node allBookings.js
                 "departure": {
                   "airport": {
                     "city": {
-                      "name": "Wroclaw"
+                      "name": "Wrocław"
                     },
-                    "code": "WRO"
+                    "locationId": "WRO"
                   }
                 },
                 "arrival": {
@@ -152,7 +152,7 @@ node allBookings.js
                     "city": {
                       "name": "Warsaw"
                     },
-                    "code": "WAW"
+                    "locationId": "WAW"
                   }
                 },
                 "airline": {
@@ -176,9 +176,9 @@ node allBookings.js
                 "departure": {
                   "airport": {
                     "city": {
-                      "name": "Wroclaw"
+                      "name": "Wrocław"
                     },
-                    "code": "WRO"
+                    "locationId": "WRO"
                   }
                 },
                 "arrival": {
@@ -186,7 +186,7 @@ node allBookings.js
                     "city": {
                       "name": "Warsaw"
                     },
-                    "code": "WAW"
+                    "locationId": "WAW"
                   }
                 },
                 "airline": {

@@ -37,7 +37,7 @@ const query = `
               city {
                 name
               }
-              code
+              locationId
             }
           }
           arrival {
@@ -45,7 +45,7 @@ const query = `
               city {
                 name
               }
-              code
+              locationId
             }
           }
           airline {

@@ -8,7 +8,7 @@ fragment RouteStop on RouteStop {
     city {
       name
     }
-    code
+    locationId
   }
 }
 
